@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Poppins;
+}
+.navbar{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: black;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+	top:0;
+	opacity: 0.8;
+}
+.nav{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 15%;
+}
+.logo{
+	flex: 1 1 auto;
+	margin-left: 10%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 35px;
+}
+a{
+	margin: 15px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover{
+	color: #A243CB;
+}
+.banner-area{
+	position: relative;
+	background-image: url(1.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-area, .hobby-area, .contact-area, .lab-area{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 700px;
+}
+.text-part{
+	width: 65%;
+	height: 80%;
+}
+h1{
+	font-size: 50px;
+	font-family: Poppins;
+	font-style: italic;
+	text-align: center;
+	color: #829fcc;
+}
+p{
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Rancho', cursive;
+}
+.zurag1{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url(1.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: zurag1 10s infinite; 
+}
+.zurag2{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url(6.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: zurag2 10s infinite;
+}
+.zurag3{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url(7.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: zurag3 10s infinite;
+}
+@keyframes zurag1 {
+	0%{ opacity: 1;}
+	50%{ opacity: 0;}
+	100%{ opacity: 0;}
+}
+@keyframes zurag2 {
+	0%{ opacity: 0;}
+	50%{ opacity: 1;}
+	100%{ opacity: 0;}
+}
+@keyframes zurag3 {
+	0%{ opacity: 0;}
+	50%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+.about-area{
+	position: relative;
+	background-image: url(2.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.contact-area{
+	position: relative;
+	background-image: url(4.png);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.hobby-area{
+	position: relative;
+	background-image: url(3.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.lab-area{
+	position: relative;
+	background-image: url(5.png);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.pic{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	border-color: #999999;
+}
+.box {
+	width: 900px;
+	height: 400px;
+	background: rgba(0,0,0,0.4);
+	padding: 20px;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+.box ul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+.box ul li{
+	list-style: none;
+	margin: 0 15px;
+}
+.box ul li .fa{
+	font-size: 30px;
+	line-height: 60px;
+	transition: .6s;
+	color: #000;
+}
+.box ul li .fa:hover{
+	color: #fff;
+}
+.box ul li a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.box ul li a:hover{
+	transform: translate(0,-10px);
+}
+.box ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.box ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.box ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.box ul li:nth-child(4) a:hover{
+	background-color: #0077B5;
+}
+#drop li a{
+	background-color: #e0d4a8;
+  	border: none;
+  	color: white;
+  	padding: 10px 22px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 12px;
+  	margin-left: 0;
+}
+#drop li a:hover{
+	color: #A243CB;
+}
